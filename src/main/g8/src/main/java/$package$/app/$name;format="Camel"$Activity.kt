@@ -1,7 +1,10 @@
 package $package$.app
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v4.app.ActivityCompat
 
 import $package$.R
 
@@ -18,6 +21,14 @@ internal class $name;format="Camel"$Activity : AppCompatActivity() {
                     .replace(R.id.fragment_layout, fragment)
                     .commit()
 
+        }
+    }
+
+    companion object {
+
+        fun start(activity: Activity) {
+            val intent = Intent(activity, $name;format="Camel"$Activity::class.java)
+            ActivityCompat.startActivity(activity, intent, null)
         }
     }
 

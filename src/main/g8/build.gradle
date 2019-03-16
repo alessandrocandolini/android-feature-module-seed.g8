@@ -32,10 +32,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation "com.android.support:appcompat-v7:\$supportLibraryVersion"
-    implementation "com.android.support:support-media-compat:\$supportLibraryVersion" // otherwise play-services-location will use version 25.. remove when upgrading play services
     implementation "com.android.support:support-v4:\$supportLibraryVersion"
     implementation "com.android.support:recyclerview-v7:\$supportLibraryVersion"
-    implementation "com.android.support:design:\$supportLibraryVersion" // for coordinator layout
+    implementation "com.android.support:design:\$supportLibraryVersion"
 
     // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
     implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: "\$retrofitVersion"
@@ -43,8 +42,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation group: 'com.google.code.gson', name: 'gson', version: "\$gsonVersion"
 
-    // https://mvnrepository.com/artifact/com.squareup.picasso/picasso
-    implementation group: 'com.squareup.picasso', name: 'picasso', version: "\$picassoVersion"
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: "\$retrofitVersion"
 
     // Kotlin
 
@@ -66,17 +65,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.mockito/mockito-core
     testImplementation group: 'org.mockito', name: 'mockito-core', version: "\$mockitoCoreNewVersion"
 
-    // https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-test
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test', version: "\$kotlin_version"
-
-    // https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-test-junit
-    testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-test-junit', version: "\$kotlin_version"
-
     // https://mvnrepository.com/artifact/com.squareup.okhttp/mockwebserver
     testImplementation group: 'com.squareup.okhttp3', name: 'mockwebserver', version: "\$okhttpVersion"
-
-    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
-    testImplementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: "\$retrofitVersion"
 
     // https://mvnrepository.com/artifact/com.nhaarman.mockitokotlin2/mockito-kotlin
     testImplementation (group: 'com.nhaarman.mockitokotlin2', name: 'mockito-kotlin', version: "\$mockitoKotlinVersion") {
@@ -84,7 +74,7 @@ dependencies {
         exclude group: 'org.mockito'
     }
 
-    // https://mvnrepository.com/artifact/io.kotlintest/kotlintest-runner-junit4
-    testImplementation group: 'io.kotlintest', name: 'kotlintest-runner-junit4', version: "\$kotlintestVersion"
+    // https://mvnrepository.com/artifact/io.kotlintest/kotlintest-runner-junit5
+    testImplementation group: 'io.kotlintest', name: 'kotlintest-runner-junit5', version: "\$kotlintestVersion"
 
 }
