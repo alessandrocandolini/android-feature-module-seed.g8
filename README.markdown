@@ -2,7 +2,7 @@ A [Giter8][g8] opinionated template for gradle android library feature modules w
 
 ## Short description
 
-The aim of this template is to reduce some boilerplate when working in a multi-module android gradle project with feature modules. 
+The aim of this template is to reduce some boilerplate associated with working in a multi-module android gradle project. 
 
 This is just a POC. 
 
