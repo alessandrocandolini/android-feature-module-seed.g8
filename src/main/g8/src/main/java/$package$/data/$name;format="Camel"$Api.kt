@@ -14,7 +14,6 @@ internal interface $name;format="Camel"$Api {
 
 internal interface $name;format="Camel"$ApiWrapper {
 
-    @POST("/some_url")
     suspend fun fetch(@Body data : $name;format="Camel"$ApiRequest) : $name;format="Camel"$ApiResponse
 
 }
