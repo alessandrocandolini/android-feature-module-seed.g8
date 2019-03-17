@@ -14,13 +14,13 @@ internal interface $name;format="Camel"$Api {
 
 internal interface $name;format="Camel"$ApiWrapper {
 
-    suspend fun fetch(@Body data : $name;format="Camel"$ApiRequest) : $name;format="Camel"$ApiResponse
+    suspend fun fetch(data : $name;format="Camel"$ApiRequest) : $name;format="Camel"$ApiResponse
 
 }
 
 internal class $name;format="Camel"$ApiWrapperDefault(private val api : $name;format="Camel"$Api) : $name;format="Camel"$ApiWrapper{
 
-    override suspend fun fetch(@Body data : $name;format="Camel"$ApiRequest) : $name;format="Camel"$ApiResponse = api.fetch(data).await()
+    override suspend fun fetch(data : $name;format="Camel"$ApiRequest) : $name;format="Camel"$ApiResponse = api.fetch(data).await()
 
 }
 
