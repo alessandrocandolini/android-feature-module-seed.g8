@@ -1,11 +1,8 @@
 package $package$.data
 
-internal interface $name;format="Camel"$Repository {
+import $package$.core.*
 
-
-}
-
-internal class $name;format="Camel"$RepositoryDefault : $name;format="Camel"$Repository {
+internal class $name;format="Camel"$RepositoryDefault : $name;format="Camel"$Contract.Repository {
 
 
 }
