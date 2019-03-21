@@ -22,6 +22,11 @@ internal interface $name;format="Camel"$Contract{
 
     }
 
+    interface $name;format="Camel"$Repository {
+
+
+    }
+
     interface Tracker {
 
 
